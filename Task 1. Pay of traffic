@@ -1,0 +1,19 @@
+package main
+
+import "fmt"
+
+func main() {
+    // Переданные значения a, b, c и d
+    var a,b,c,d int
+    fmt.Scan(&a,&b,&c,&d)
+
+    // Вычисляем расходы на интернет
+    totalCost := a
+    if d > b {
+        extraData := d - b
+        totalCost += extraData * c
+    }
+
+    // Выводим суммарные расходы Кости на интернет
+    fmt.Println(totalCost)
+}
